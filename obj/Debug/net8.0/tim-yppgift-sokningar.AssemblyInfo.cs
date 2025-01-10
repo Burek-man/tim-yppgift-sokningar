@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tim-yppgift-sokningar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+395ac44291b33ca13f9862bd9ba51354b0c9ce63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bcf44f8a6c0640eabb4b7b1c29ef17dbfdae4bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("tim-yppgift-sokningar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tim-yppgift-sokningar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
