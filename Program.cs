@@ -1,55 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
-using System.Collections.Generic;
+﻿using System.Dynamic;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+using System.Xml;
+using tim_yppgift_sokningar;
 
 class Program
 {
-    // Binärsökning på en lista av personer, söker efter personnummer
+    
     static Person BinarySearch(List<Person> personer, int personnr)
     {
-        int left = 0;
-        int right = personer.Count - 1;
+        
 
-        while (left <= right)
-        {
-            int mid = left + (right - left) / 2;
-
-            // Hämta person från listan
-            Person midPerson = personer[mid];
-
-            // Jämför personnummer
-            if (midPerson.Personnr == personnr)
-            {
-                return midPerson; // Hittade personen
-            }
-            else if (midPerson.Personnr < personnr)
-            {
-                left = mid + 1; // Sök i högra delen
-            }
-            else
-            {
-                right = mid - 1; // Sök i vänstra delen
-            }
-        }
-
-        return null; // Om personen inte finns i listan
     }
 
-    static void Main()
+    static void Main(string[] args)
     {
-        // Skapa en lista med personer
-        List<Person> personer = new List<Person>
+        List<Person>personlista = new List<Person>();
         {
-            new Person(1001, "Alice"),
-            new Person(1002, "Bob"),
-            new Person(1003, "Charlie"),
-            new Person(1004, "David"),
-            new Person(1005, "Eve")
+           personlista.Add(new Person(1001, "Dragan"));
+           personlista.Add(new Person(1002, "Bob"));
+           personlista.Add(new Person(1003, "Bengan"));
+           personlista.Add(new Person(1004, "David"));
+           personlista.Add(new Person(1005, "Dalton"));
         };
 
-        // Exempel på att söka efter en person
         int söktPersonnr = 1003;
-        Person person = BinarySearch(personer, söktPersonnr);
+        Person person = BinarySearch(personlista, söktPersonnr);
 
         if (person != null)
         {
@@ -62,4 +38,3 @@ class Program
         
     }
 }
-if
